@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link rel="stylesheet" href="style.css">
+  <title>Folk</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+   <nav>
+    <div class="left">'+      <a href="/">
+        <img src="images/folk-logp.jpeg" alt="">
+      </a>
+    </div>
+
+    <div class="right">
+      <a href="#trips">
+    <i class="fa-solid fa-train-tram"></i>
+     <span>Yatras</span>
+      </a>
+      <a href="#about">
+    <i class="fa-solid fa-user"></i>
+     <span>About us</span>
+      </a>
+      <a href="#contact">
+    <i class="fa-solid fa-envelope"></i>
+     <span>Contact</span>
+      </a>
+    </div>
+   </nav>
+
+   <!-- HERO-SECTION -->
+    <section class="hero-section">
+  <div class="hero-container">
+
+    <div class="hero-text">
+      <h1>Where Friendship Meets Faith</h1>
+      <p>
+        Friends of Lord Krishna (FOLK) is a community of students and youth
+        who come together to learn, travel, and grow spiritually —
+        inspired by the teachings of Lord Krishna.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#trips" class="hero-btn primary">Explore Yatras</a>
+        <a href="#about" class="hero-btn secondary">Know More</a>
+      </div>
+    </div>
+
+    <div class="hero-images">
+      <img src="images/img1.jpeg" class="hero-img img-main" alt="">
+      <img src="images/img2.jpeg" class="hero-img img-left" alt="">
+      <img src="images/img3.jpeg" class="hero-img img-right" alt="">
+    </div>
+
+  </div>
+</section>
+    </section>
+
+    <!--HOSTEL-SECTION-->
+    <section class="hostel-section" id="hostel">
+  <div class="container">
+
+    <h1 class="main-heading">
+      Premium Boys Hostel Near Race Course Road
+    </h1>
+
+    <p class="subtitle">
+      Fully Furnished 3BHK Hostel | AC Rooms | Hygienic Food | Peaceful Environment
+    </p>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+
+      <div class="img-card">
+        <img src="images/folk-img1.jpeg" alt="Hostel Kitchen Facility" onclick="openModal(this)">
+      </div>
+
+      <div class="img-card">
+        <img src="images/folk-img2.jpeg" alt="Hostel Living Room" onclick="openModal(this)">
+      </div>
+
+      <div class="img-card">
+        <img src="images/folk-img3.jpeg" alt="Spacious Hall Area" onclick="openModal(this)">
+      </div>
+
+      <div class="img-card">
+        <img src="images/folk-img4.jpeg" alt="Bunk Bed Room for Students" onclick="openModal(this)">
+      </div>
+
+      <div class="img-card">
+        <img src="images/folk-img5.jpeg" alt="Study Workspace Area" onclick="openModal(this)">
+      </div>
+
+      <div class="img-card">
+        <img src="images/folk-img6.jpeg" alt="AC Room Study Setup" onclick="openModal(this)">
+      </div>
+
+      <div class="img-card">
+        <img src="images/folk-img7.jpeg" alt="Comfortable Hostel Room Interior" onclick="openModal(this)">
+      </div>
+
+    </div>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img id="modalImg">
+    </div>
+
+    <!-- FACILITIES -->
+    <div class="facilities">
+      <h2>Facilities for Students</h2>
+      <ul>
+        <li>✔ AC Rooms with Comfortable Beds</li>
+        <li>✔ 24x7 Water & Electricity Supply</li>
+        <li>✔ RO Water Cooler Available</li>
+        <li>✔ Nutritious & Hygienic Food</li>
+        <li>✔ Peaceful & Spiritual Environment</li>
+        <li>✔ Fully Furnished 3BHK Setup</li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h3>Limited Seats Available – Join Folk Hostels</h3>
+      <p>66, Silver Stud Apartment, Near Race Course Road</p>
+      <a href="tel:8103802948" class="btn">Call Now</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function openModal(img) {
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+    <!-- TRIP-SECTION -->
+    <section id="trips" class="trip-section">
+  <h2 class="section-title">Upcoming Yatras</h2>
+  <p class="section-subtitle">
+    Join us on soulful journeys filled with learning, devotion, and friendship.
+  </p>
+
+  <div class="trip-cards">
+
+    <div class="trip-card">
+      <img src="images/vcm.jpeg" alt="Vrindavan Trip">
+      <div class="trip-content">
+        <h3>Vrindavan Yatra</h3>
+        <p class="trip-info"> Vrindavan • 🗓 Feb 2026</p>
+        <p class="trip-desc">
+          A spiritual journey to the land of Lord Krishna with kirtans,
+          temple visits, and group activities.
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcl7wYKK7YU4BCtsM3_aLQuaxwfXVmR2UBAgztb28RlNlvNw/viewform?embedded=true"
+         target="_blank" class="trip-btn">Register Now</a>
+      </div>
+    </div>
+
+    <div class="trip-card">
+      <img src="images/dwarrka.jpeg" alt="Dwarka Trip">
+      <div class="trip-content">
+        <h3>Dwarka Darshan</h3>
+        <p class="trip-info"> Dwarka • 🗓 March 2026</p>
+        <p class="trip-desc">
+          Explore the divine city of Dwarkadhish with guided sessions
+          and a peaceful group experience.
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcl7wYKK7YU4BCtsM3_aLQuaxwfXVmR2UBAgztb28RlNlvNw/viewform?embedded=true"
+         target="_blank" class="trip-btn">Register Now</a>
+      </div>
+    </div>
+
+    <div class="trip-card">
+      <img src="images/mayapur.jpeg" alt="Mayapur Trip">
+      <div class="trip-content">
+        <h3>Mayapur Retreat</h3>
+        <p class="trip-info"> Mayapur • 🗓 April 2026</p>
+        <p class="trip-desc">
+          A calm retreat focused on learning, seva, and deep spiritual connection.
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcl7wYKK7YU4BCtsM3_aLQuaxwfXVmR2UBAgztb28RlNlvNw/viewform?embedded=true"
+         target="_blank"
+        class="trip-btn">
+          
+          Register Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+</section>
+
+ <!-- ABOUT US-SECTION -->
+  <section id="about" class="about us-section">
+  <h2 class="about-heading">About Us</h2>
+
+  <div class="about-image">
+    <img src="images/FOLK IMG.jpeg" alt="Friends of Lord Krishna">
+  </div>
+
+  <div class="about-text">
+    <p>
+      Friends of Lord Krishna (FOLK) is a student-driven spiritual community
+      inspired by the timeless teachings of Lord Krishna and guided by the
+      vision of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada.
+    </p>
+
+    <p>
+      We believe spirituality is not about isolation, but about friendship,
+      learning, and shared experiences. Through trips, discussions, and
+      devotional activities, we create a space where young minds grow with
+      values, purpose, and devotion.
+    </p>
+
+    <p class="about-quote">
+      “Dedicated to His Divine Grace A.C. Bhaktivedanta Swami Prabhupada”
+    </p>
+  </div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="location-section">
+  <h2 class="section-title">Where We Are</h2>
+  <p class="section-subtitle">
+    Visit us, connect with us, and be part of the journey.
+  </p>
+
+  <div class="location-card">
+    <div class="location-text">
+      <h3>FOLK Indore</h3>
+      <p>
+        A place where discussions happen, friendships grow,
+        and spiritual learning begins.
+      </p>
+
+      <a href="https://share.google/36NbInEpLeTne388a"
+         target="_blank"
+         class="location-btn">
+        📍 View on Google Maps
+      </a>
+    </div>
+
+    <div class="location-map">
+      <iframe
+  src="https://www.google.com/maps?q=FOLK%20Indore&output=embed"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+     
+    </div>
+  </div>
+</section>
+  </section>
+
+  <!--CONTACT-SECTION -->
+  <section id="contact" class="contact-section">
+      <div class="contact-container">
+
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>
+        Have questions about our trips, registrations, or events?
+        We are happy to help you.
+      </p>
+
+      <div class="info-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>FOLK Indore,Madhya Pradesh, India</span>
+      </div>
+
+      <div class="info-item">
+        <a href="mailto:gaurharidasa108@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>gaurharidasa108@gmail.com</span>
+        </a>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 9116677942</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+ </section>
+
+</body>
+</html>
